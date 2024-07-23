@@ -5,6 +5,8 @@
 // File: timer_sdk.c
 // Author: Michele Caon, Francesco Poluzzi
 // Date: 23/07/2024
+// Author: Michele Caon, Francesco Poluzzi
+// Date: 23/07/2024
 // Description: Timer functions
 
 #include <stdint.h>

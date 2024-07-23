@@ -5,6 +5,8 @@
 // File: example_timer_sdk.c
 // Author: Juan Sapriza, Francesco Poluzzi
 // Date: 23/07/2024
+// Author: Juan Sapriza, Francesco Poluzzi
+// Date: 23/07/2024
 // Description: Example application to test the Timer SDK. Will count the time to execute a few short tasks.
 
 #include <stdint.h>
@@ -45,7 +47,7 @@ int main(){
     timer_start();              // Start counting the time
     nop_cycles[0] = timer_stop();  // Stop counting the time
     PRINTF("0 NOPs:\t%d cc\n\r", nop_cycles[0] );
-    
+      
     timer_start();     
     asm volatile ("nop");
     nop_cycles[1] = timer_stop();  
@@ -84,7 +86,7 @@ int main(){
         return EXIT_FAILURE;
     }
     
-     timer_microseconds_init();           // Init the timer SDK for microseconds
+    timer_microseconds_init();           // Init the timer SDK for microseconds
     timer_start(); 
     for(i = 0; i < 1000; i++){
         asm volatile ("nop");
@@ -105,3 +107,4 @@ int main(){
     PRINTF("All tests passed\n\r");
     return EXIT_SUCCESS;
 }
+
