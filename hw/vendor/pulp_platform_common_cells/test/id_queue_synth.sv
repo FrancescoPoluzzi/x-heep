@@ -30,7 +30,7 @@ module id_queue_synth (
                         oup_pop,
                         oup_req,    oup_gnt;
 
-                id_queue_xheep #(
+                id_queue #(
                     .ID_WIDTH   (idw),
                     .CAPACITY   (cap),
                     .data_t     (data_t)
